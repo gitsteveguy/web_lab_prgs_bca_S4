@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Biodata - Steve Sajan Jacob</title>
+  </head>
+  <style>
+    *{
+         color: white;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      background: linear-gradient(#2c072c, black);
+      padding: 1rem;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin:1rem;
+    }
+    #profile-pic{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 20px;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+      text-align: center;
+    }
+    #credentials{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container {
+      background-color: #4a4a4a58;
+      padding: 1rem;
+      border-radius: 24px;
+      color: white;
+      h3 {
+        margin: 1rem;
+        font-size: xx-large;
+      }
+    }
+    .w40{
+        width: 40%;
+        height: 50vh;
+    }
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-around;
+        grid-gap: 1rem;
+    
+    div{
+        background-color: #4a4a4a69;
+        padding: 1rem;
+        border-radius: 24px;
+    }}
+    .tb-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    table,
+    td {
+      border-collapse: collapse;
+      padding: 0.5rem;
+      border: 1px solid #4a4a4aaf;
+    }
+    tr{
+        background-color: #4a4a4a69;
+    }
+    tr:first-child{ 
+        background-color: #4a4a4aaf;
+    }
+  </style>
+  <header>
+    <div id="personal-details" class="container">
+        <p>Name : Steve Sajan Jacob<br>
+            Father's Name : Sajan Jacob<br>
+            Mother's Name : Joyce Sajan<br>
+            Date of Birth : 23/08/2004<br>
+            Sex : Male<br>
+            Nationality : Indian<br>
+            Address : Sasthamangalam ,Trivandrum<br>
+            Language : English,Malayalam,Hindi</p>
+    </div>
+    <img src="stevepfp.jpeg" alt="Steve Sajan Jacob" id="profile-pic">
+  </header>
+  <body>
+    <section id="credentials">
+      <div class="container w40 tb-container">
+        <h3>Education</h3>
+        <table>
+          <tr>
+            <td>Exam Name</td>
+            <td>Year of Exam</td>
+            <td>Board / University</td>
+            <td>School / College</td>
+            <td>Percentage / Grade</td>
+          </tr>
+          <tr>
+            <td>10th</td>
+            <td>2020</td>
+            <td>ICSE</td>
+            <td>CNS</td>
+            <td>93.75%</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>2022</td>
+            <td>ISC</td>
+            <td>CNS</td>
+            <td>95.25%</td>
+          </tr>
+          <tr>
+            <td>Degree</td>
+            <td>2025</td>
+            <td>University of Kerala</td>
+            <td>CNC</td>
+            <td>Ongoing</td>
+          </tr>
+          <tr>
+            <td>PG</td>
+            <td>2027</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>Upcoming</td>
+          </tr>
+        </table>
+      </div>
+      <div class="container w40">
+        <h3>Skills</h3>
+        <div class="skills-container">
+                <div>React</div>
+                <div>Python</div>
+                <div>PHP</div>
+                <div>Node</div>
+                <div>C</div>
+                <div>C++</div>
+                <div>Java</div>
+                <div>Javascript</div>
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>Bootstrap</div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <div id="declaration" class="container">
+        <h3>Declaration</h3>
+        <p>I do hereby declare that the above information is true to the best of my knowledge</p>
+    </div>
+  </body>
+</html>
