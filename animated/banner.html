@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banner</title>
+  </head>
+  <style>
+    @property --hue {
+      syntax: "<number>"; /* <- defined as type number for the transition to work */
+      initial-value: 0;
+      inherits: false;
+    }
+    body {
+      background: linear-gradient(hsl(var(--hue), 71%, 10%), black);
+      animation: loopbg 5000ms 0ms infinite linear;
+    }
+    @keyframes loopbg {
+      from{
+        --hue: 0;
+      }
+
+      to{
+        --hue: 360;
+      }
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      color: white;
+      h3 {
+        font-size:xx-large;
+      }
+      marquee {
+        font-family: cursive;
+      }
+    }
+  </style>
+  <body>
+    <section>
+      <img src="CNC_LOGO_2023.png" alt="Logo" >
+      <h3>Christ Nagar College</h3>
+      <marquee behavior="scroll" direction="left">
+        <p>
+          Applications are invited for the Admission to UG Courses for the
+          academic year 2024-'25.Apply Through: www.admissions.keralauniversity.ac.in.
+        </p>
+      </marquee>
+    </section>
+  </body>
+</html>

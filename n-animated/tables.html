@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <style>
+       body {
+      background: linear-gradient(#2c072c, black);
+    }
+    section {
+      display: grid;
+      place-items: center;
+      text-align: center;
+      height: 100vh;
+    }
+    .table-container {
+      background-color: #4a4a4a58;
+      padding: 1rem;
+      border-radius: 24px;
+      color: white;
+      h3 {
+        margin: 1rem;
+        font-size: xx-large;
+      }
+    }
+    table,
+    td {
+      border-collapse: collapse;
+      padding: 0.5rem;
+      border: 1px solid #4a4a4aaf;
+    }
+    tr{
+        background-color: #4a4a4a69;
+    }
+    tr:first-child{ 
+        background-color: #4a4a4aaf;
+    }
+    #break{
+        writing-mode: tb;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="table-container">
+        <h3>Time Table</h3>
+        <table>
+          <tr>
+            <td>Day</td>
+            <td>1st Period</td>
+            <td>2nd Period</td>
+            <td id="break" rowspan="6">Break</td>
+            <td>3rd Period</td>
+            <td>4th Period</td>
+            <td>5th Period</td>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>Web Programming</td>
+            <td>Python</td>
+            <td>Mini Project</td>
+            <td>Data Mining</td>
+            <td>Python Lab</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Data Mining</td>
+            <td>Web Programming</td>
+            <td>Python</td>
+            <td>Mini Project</td>
+            <td>Web Programming Lab</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Python</td>
+            <td>Web Programming</td>
+            <td>Web Programming Lab</td>
+            <td>Python Lab</td>
+            <td>Mini Project</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Web Programming</td>
+            <td>Python</td>
+            <td>Mini Project</td>
+            <td>Data Mining</td>
+            <td>Python Lab</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Web Programming</td>
+            <td>Data Mining</td>
+            <td>Python</td>
+            <td>Mini Project</td>
+            <td>Python Lab</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
