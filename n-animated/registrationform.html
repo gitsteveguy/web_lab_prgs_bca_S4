@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Form</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(#2c072c, black);
+    }
+    section {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #4a4a4a58;
+      padding: 1rem;
+      display: block;
+      width: 50%;
+      text-align: center;
+      border-radius: 24px;
+      color: white;
+      h3 {
+        margin: 1rem;
+        font-size: xx-large;
+      }
+    }
+    .row {
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+      align-items: center;
+    }
+    .igrp {
+      display: flex;
+      gap: 0.25rem;
+    }
+    input {
+      appearance: none;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      color: white;
+    }
+    input:active {
+      appearance: none;
+    }
+    input[type="radio"] {
+      appearance: revert;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    select {
+      background: transparent;
+      color: white;
+      padding: 0.25rem;
+      border: none;
+      border-bottom: 1px solid white;
+      color: white;
+    }
+    textarea{
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 24px;
+        padding: 1rem;
+    }
+    .rcnt {
+      display: flex;
+      justify-content: center;
+      gap: 0.25rem;
+    }
+    .tb{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        appearance: none;
+        border: none;
+        color: white;
+        padding: 1rem;
+        border-radius: 24px;
+        background-color: #76767658;
+        cursor: pointer;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="container">
+        <h3>Registration Form</h3>
+        <form>
+          <div class="row">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Middle Name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div class="row">
+            <div class="igrp">
+              <label>Course</label>
+              <select>
+                <option value="" disabled selected>Select your course</option>
+                <option value="">BCA</option>
+                <option value="">BBA</option>
+                <option value="">BCom</option>
+              </select>
+            </div>
+            <div class="igrp">
+              <label for="">Gender</label>
+              <div class="rcnt">
+                <input type="radio" name="gender" />
+                <label for="">Male</label>
+                <input type="radio" name="gender" />
+                <label for="">Female</label>
+                <input type="radio" name="gender" />
+                <label for="">Other</label>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="align-items: start;">
+            <input type="tel" placeholder="Contact no:">
+            <div class="tb">
+                <label for="">Address</label>
+                <textarea rows="10"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

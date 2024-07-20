@@ -8,7 +8,6 @@ const gallery_data = [{
     title : 'Campus Radio',
     desc : 'RJ Steve Sajan Jacob hosting campus radio'
 }]
-img_title = 'Basketball Tournament'
 gallery_grid = document.querySelector('#gallery_grid');
 if(gallery_grid){
     for(i=0;i<16;i++){
