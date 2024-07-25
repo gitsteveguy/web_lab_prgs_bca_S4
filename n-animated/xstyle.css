@@ -1,0 +1,16 @@
+books{
+    background-color: white;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+book{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid brown;
+    border-radius: 24px;
+    padding: 1rem;
+}
+title{
+    font-weight: bold;
+}

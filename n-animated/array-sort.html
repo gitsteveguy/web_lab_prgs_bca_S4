@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Array Sort</title>
+</head>
+<style>
+    body{
+        display: grid;
+        place-content: center;
+        height: 100svh;
+        background: url(background.jpg);
+        background-size: 100% 100%;;
+    }
+    .container{
+        background: linear-gradient(#ac00ac, blue);
+        padding: 1rem;
+        border-radius: 24px;
+        color: white;
+        box-shadow: 6px 5px 20px 3px grey;
+        scale: 2;
+    }
+    input{
+        border: none;
+        border-bottom: 2px solid white;
+        font-size: large;
+        background: transparent;
+        color: white;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Sorting Via Array</h2>
+        <input type="text" id="input" placeholder="Enter Values seperated by commas(,)">
+        <h3>Sorted Array = <span id="result"></span></h3>
+    </div>
+</body>
+<script>
+    input.addEventListener('input',()=>{
+        i = document.querySelector('#input');
+        r = document.querySelector('#result');
+        v = i.value
+        r.innerText = '[ '+v.split(',').map(x=>parseInt(x)).sort().join(' , ') +' ]'
+    })
+</script>
+</html>

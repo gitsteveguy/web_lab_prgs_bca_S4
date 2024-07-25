@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Palindrome</title>
+  </head>
+  <style>
+    body {
+      display: grid;
+      place-content: center;
+      height: 100vh;
+      background: url(background.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px 0 #1f26875e;
+      backdrop-filter: blur(6px);
+      border: 1px solid #ffffff2e;
+      padding: 1rem;
+      border-radius: 24px;
+      color: white;
+      scale: 2;
+    }
+    input {
+      border: none;
+      border-bottom: 2px solid white;
+      font-size: large;
+      background: transparent;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2>Palindrome Finder</h2>
+      <input type="number" id="input" placeholder="Enter No:" />
+      <h3>Is Palindrome = <span id="result"></span></h3>
+    </div>
+    
+  </body>
+  <script>
+    input.addEventListener("input", () => {
+      i = document.querySelector("#input");
+      r = document.querySelector("#result");
+      v = i.value;
+      r.innerText = v === v.split("").reverse().join("") && v !== "";
+    });
+  </script>
+</html>

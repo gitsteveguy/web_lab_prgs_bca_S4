@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Swapper</title>
+</head>
+<style>
+    body{
+        display: grid;
+        place-content: center;
+        height: 100svh;
+        background: url(background.jpg);
+        background-size: 100% 100%;;
+    }
+    .container{
+        background: linear-gradient(#ac00ac, blue);
+        padding: 1rem;
+        border-radius: 24px;
+        color: white;
+        box-shadow: 6px 5px 20px 3px grey;
+        scale: 2;
+    }
+    input{
+        border: none;
+        border-bottom: 2px solid white;
+        font-size: large;
+        background: transparent;
+        color: white;
+    }
+    button{
+        border: none;
+        border-radius: 24px;
+        background: linear-gradient(blue,#ac00ac);
+        border: 1px solid white;
+        color: white;
+        box-shadow: 5px 7px 20px 0px black;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Swapper</h2>
+        <input type="number" id="input1" placeholder="Enter No:">
+        <input type="number" id="input2" placeholder="Enter No:">
+        <button onclick="swap()">Swap</button>
+    </div>
+</body>
+<script>
+    const swap = ()=>{
+        i1 = document.querySelector('#input1');
+        i2 = document.querySelector('#input2');
+        if(i1.value==='')
+            i1.value=0
+        if(i2.value==='')
+            i2.value=0
+        i1.value = parseInt(i1.value) + parseInt(i2.value)
+        i2.value = parseInt(i1.value) - parseInt(i2.value)
+        i1.value = parseInt(i1.value) - parseInt(i2.value)
+    }
+</script>
+</html>

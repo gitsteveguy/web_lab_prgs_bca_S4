@@ -1,0 +1,10 @@
+/* External CSS */
+.box2 {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #0000001a;
+    background-color: #0d62b2;
+    color: #ffffff;
+}

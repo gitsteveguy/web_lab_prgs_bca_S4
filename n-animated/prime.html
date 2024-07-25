@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Prime</title>
+</head>
+<style>
+    body{
+        display: grid;
+        place-content: center;
+        height: 100svh;
+        background: url(background.jpg);
+        background-size: 100% 100%;;
+    }
+    .container{
+        background: linear-gradient(#ac00ac, blue);
+        padding: 1rem;
+        border-radius: 24px;
+        color: white;
+        box-shadow: 6px 5px 20px 3px grey;
+        scale: 2;
+    }
+    input{
+        border: none;
+        border-bottom: 2px solid white;
+        font-size: large;
+        background: transparent;
+        color: white;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Prime Finder</h2>
+        <input type="number" id="input" placeholder="Enter No:">
+        <h3>Is prime = <span id="result"></span></h3>
+    </div>
+</body>
+<script>
+    input.addEventListener('input',()=>{
+        i = document.querySelector('#input');
+        r = document.querySelector('#result');
+        v = parseInt(i.value);
+        r.innerText = Array.from(Array(v).keys()).filter((f)=>{return v%f===0}).length===1
+    })
+</script>
+</html>
